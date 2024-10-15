@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --white1: #ffffff;
+  --black1: #000000;
+
+  --textgrey: #808184;
+
+  --grey1: #dfe4e9;
+  --grey2: #f0f1f4;
+  --grey3: #F8F8FA;
+}
+
+.board-details {
+  width: 100%;
+  height: calc(100vh - 68px);
+  background-color: var(--grey2);
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
+}
+
+.board-details-list {
+  width: 100%;
+  /* Make the container take full width */
+  display: flex;
+  justify-content: space-between;
+  /* Spread the items evenly */
+  gap: 1rem;
+  /* Optional: Add spacing between items */
+}
+
+.board-item {
+  flex-grow: 1;
+  /* Make each board item grow to fill space */
+  flex-basis: 0;
+  /* Allows equal size of flex items */
+  min-width: 250px;
+  /* Optional: Ensures cards don’t get too small */
+  background-color: var(--white1);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
